@@ -35,7 +35,7 @@ if has('lua')
     \ }
 endif
 " インデントに色を付けて見やすくする
-NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'nathanelkane/vim-indent-guides'
 " Elixir
 NeoBundle "elixir-lang/vim-elixir"
 
@@ -83,8 +83,11 @@ let g:neocomplete#enable_fuzzy_completion         = 1
 let g:neocomplete#lock_buffer_name_pattern        = '\*ku\*'
 " }}}
 
-" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+" vim-indent-guides {{{
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 30
+" }}}
 
 " -------------------------プラグイン設定終わり
 
