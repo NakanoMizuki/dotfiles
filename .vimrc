@@ -45,9 +45,6 @@ call neobundle#end()
 filetype plugin indent on
 
 
-"hyblid カラースキーマ
-colorscheme jellybeans
-
 "unite {{{
 let g:unite_enable_start_insert=1
 nmap <silent> <C-u><C-b> :<C-u>Unite buffer<CR>
@@ -133,9 +130,20 @@ set title
 set wildmenu
 " 入力中のコマンドを表示する
 set showcmd
+
+
+" ---------------------- カラーテーマ
+" カラースキーマの設定
+colorscheme jellybeans
 " 構文毎に文字色を変化させる
 syntax on
-
+" 現在のカーソル行の表示
+set cursorline
+" カーソル行のアンダーラインを消す
+hi clear cursorline
+" 現在のカーソル行の数字の色を設定
+hi cursorlineNr term=bold ctermfg=red
+" ---------------------- カラーテーマ終了
 
 " -----------------------マッピング
 nnoremap j gj
