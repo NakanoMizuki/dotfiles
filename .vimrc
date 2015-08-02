@@ -135,6 +135,14 @@ set wildmenu
 set showcmd
 " 構文毎に文字色を変化させる
 syntax on
-" jkでEscする
-inoremap jk  <Esc>
 
+
+" -----------------------マッピング
+nnoremap j gj
+nnoremap k gk
+nnoremap <S-h> ^
+nnoremap <S-l> $
+nnoremap <CR> A<CR><ESC>
+
+inoremap jk <Esc>
+" -----------------------マッピング終了
