@@ -148,8 +148,8 @@ hi cursorlineNr term=bold ctermfg=red
 " -----------------------マッピング
 nnoremap j gj
 nnoremap k gk
-nnoremap <S-h> ^
-nnoremap <S-l> $
+nnoremap <C-h> ^
+nnoremap <C-l> $
 nnoremap <CR> A<CR><ESC>
 
 inoremap jk <Esc>
