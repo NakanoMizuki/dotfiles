@@ -38,6 +38,10 @@ endif
 NeoBundle 'nathanelkane/vim-indent-guides'
 " Elixir
 NeoBundle "elixir-lang/vim-elixir"
+" CoffeeScript
+NeoBundle 'kchmck/vim-coffee-script'
+" JSON
+NeoBundle 'elzr/vim-json'
 
 " vimrc に記述されたプラグインでインストールされていないものがないかチェック
 NeoBundleCheck
