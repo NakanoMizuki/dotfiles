@@ -1,3 +1,6 @@
+set runtimepath+=~/dotfiles/
+runtime! vim-setting/*.vim
+
 " プロキシ環境用の設定ファイルを読み込む（リポジトリでは管理しない）
 if filereadable($HOME . '.vimrc.proxy')
   source $HOME/.vimrc.local
@@ -170,54 +173,6 @@ let g:indent_guides_color_change_percent = 20
 
 " -------------------------プラグイン設定終わり
 
-" エンコード指定
-set encoding=utf-8
-set fileencoding=utf-8
-" 行番号の表示
-set number 
-" 現在のカーソル位置を表示 
-set ruler 
-" 対応する括弧やブレースを表示 
-set showmatch 
-" 改行時に前の行のインデントを継続する
-set autoindent
-" 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
-set smartindent 
-" タブ文字でなく空白を使う
-set expandtab
-" タブ文字の表示幅
-set tabstop=2
-" Vimが挿入するインデントの幅
-set shiftwidth=2
-" 行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
-set smarttab
-" カーソルを行頭、行末で止まらないようにする
-set whichwrap=b,s,h,l,<,>,[,],~
-" クリップボードの設定
-set clipboard=unnamed,autoselect
-" 履歴
-set history=2000
-" スワップファイルは使わない
-set noswapfile
-" バックアップファイルを作成しない
-set nobackup
-" 余計なファイルを作らない
-set noundofile
-" 検索ワードの最初の文字を入力した時点で検索を開始する
-set incsearch
-" 小文字のみで検索したときに大文字小文字を無視する
-set smartcase
-" 検索結果をハイライト表示する
-set hlsearch
-" ウインドウのタイトルバーにファイルのパス情報等を表示する
-set title
-" コマンドラインモードで<Tab>キーによるファイル名補完を有効にする
-set wildmenu
-" 入力中のコマンドを表示する
-set showcmd
-" ステータスラインを表示
-set laststatus=2
-
 
 " ---------------------- カラーテーマ
 " カラースキーマの設定
@@ -231,18 +186,3 @@ hi clear cursorline
 " 現在のカーソル行の数字の色を設定
 hi cursorlineNr term=bold ctermfg=red
 " ---------------------- カラーテーマ終了
-
-" -----------------------マッピング
-nnoremap j gj
-nnoremap k gk
-nnoremap gj j
-nnoremap gk k
-nnoremap <C-h> ^
-nnoremap <C-l> $
-nnoremap <CR> A<CR><ESC>
-
-cnoremap <C-p> <UP>
-cnoremap <C-n> <DOWN>
-
-inoremap jk <Esc>
-" -----------------------マッピング終了
