@@ -106,6 +106,9 @@ let g:indent_guides_color_change_percent = 20
 
 " -------------------------プラグイン設定終わり
 
+" エンコード指定
+set encoding=utf-8
+set fileencoding=utf-8
 " 行番号の表示
 set number 
 " 現在のカーソル位置を表示 
