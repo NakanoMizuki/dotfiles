@@ -18,6 +18,7 @@ let g:neobundle_default_git_protocol='https'
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'LeafCage/yankround.vim'
 NeoBundle 'Shougo/vimproc', {
@@ -64,6 +65,12 @@ au FileType unite imap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
 au FileType unite nmap <silent> <buffer> <ESC><ESC> q
 au FileType unite imap <silent> <buffer> <ESC><ESC> <ESC>q
 " }}} unite
+
+" NERDTree {{{
+" 隠しファイルをデフォルトで表示させる
+let NERDTreeShowHidden = 1
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+" }}}
 
 " yankround.vim {{{
 nmap p <Plug>(yankround-p)
