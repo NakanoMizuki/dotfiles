@@ -36,7 +36,7 @@ if has('lua')
     \ }
 endif
 " インデントに色を付けて見やすくする
-NeoBundle 'nathanelkane/vim-indent-guides'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 " Elixir
 NeoBundle "elixir-lang/vim-elixir"
 " CoffeeScript
