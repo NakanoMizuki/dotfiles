@@ -15,28 +15,29 @@ let g:neobundle_default_git_protocol='https'
 
 " neobundle#begin - neobundle#end の間に導入するプラグインを記載
 NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'LeafCage/yankround.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Shougo/vimproc', {
-  \ 'build' : {
-  \     'windows' : 'make -f make_mingw32.mak',
-  \     'cygwin' : 'make -f make_cygwin.mak',
-  \     'mac' : 'make -f make_mac.mak',
-  \     'unix' : 'make -f make_unix.mak',
-  \    },
-  \ }
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 if has('lua')
   NeoBundleLazy 'Shougo/neocomplete.vim', {
-    \ 'depends' : 'Shougo/vimproc',
-    \ 'autoload' : { 'insert' : 1,}
-    \ }
+        \ 'depends' : 'Shougo/vimproc',
+        \ 'autoload' : { 'insert' : 1,}
+        \ }
 endif
-" インデントに色を付けて見やすくする
+
+NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+
 " Elixir
 NeoBundle "elixir-lang/vim-elixir"
 " CoffeeScript
@@ -81,9 +82,6 @@ let g:yankround_max_history = 100
 nnoremap <Leader><C-p> :<C-u>Unite yankround<CR>
 "}}}
 
-
-" lightline
-runtime! lightline.vim
 
 " neocomplete {{{
 let g:neocomplete#enable_at_startup               = 1
