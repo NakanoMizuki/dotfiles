@@ -33,7 +33,9 @@ set nobackup
 set noundofile
 " 検索ワードの最初の文字を入力した時点で検索を開始する
 set incsearch
-" 小文字のみで検索したときに大文字小文字を無視する
+" 大文字、小文字を区別せずに検索する
+set ignorecase
+" 大文字のみで検索したときに大文字小文字を区別する
 set smartcase
 " 検索結果をハイライト表示する
 set hlsearch
