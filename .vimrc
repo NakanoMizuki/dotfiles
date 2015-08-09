@@ -4,5 +4,8 @@ if filereadable($HOME . '.vimrc.proxy')
 endif
 
 set runtimepath+=~/dotfiles/
-runtime! vim-setting/plugins/plugins.vim
-runtime! vim-setting/*.vim
+runtime! vim-setting/basic.vim
+runtime! vim-setting/plugins.vim
+runtime! vim-setting/plugins/*.vim
+runtime! vim-setting/color.vim
+runtime! vim-setting/mapping.vim
