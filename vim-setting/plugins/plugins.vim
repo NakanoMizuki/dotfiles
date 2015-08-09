@@ -38,11 +38,15 @@ endif
 NeoBundle 'Lokaltog/vim-easymotion'
 let g:EasyMotion_do_mapping = 0 "Disable default mappings
 nmap s <plug>(easymotion-s2)
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_use_migemo = 1
+
 
 NeoBundle 'rhysd/clever-f.vim'
 let g:clever_f_ignore_case = 1
 let g:clever_f_smart_case = 1
 let g:clever_f_use_migemo = 1
+let g:clever_f_fix_key_direction = 1
 
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
