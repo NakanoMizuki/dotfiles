@@ -17,8 +17,11 @@
   lp = log -p
   cm = commit
   cmm = commit -m 
+  amend = commit --amend
   co = checkout
   cb = checkout -b
+  br = branch
+  bd = branch -d
   mnff = merge --no-ff
   ps = push
   psom = push origin master
