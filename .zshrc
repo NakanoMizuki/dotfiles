@@ -1,7 +1,7 @@
 function precmd() {
 PROMPT="%{${fg[yellow]}%}%n%{${fg[white]}%} %~%{${reset_color}%}"
 color=`get-branch-status`
-PROMPT+=" %{$color%}$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1 /')%b%{${reset_color}%}
+PROMPT+="%{$color%}$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/  \[\1\]/')%b%{${reset_color}%}
 "
 }
 
