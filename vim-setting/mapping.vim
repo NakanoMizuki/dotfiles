@@ -3,6 +3,7 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 nnoremap <C-h> ^
+nmap <C-j> %
 nnoremap <C-l> $
 nnoremap <CR> A<CR><ESC>
 
