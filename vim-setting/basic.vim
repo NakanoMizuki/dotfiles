@@ -31,6 +31,8 @@ set noswapfile
 set nobackup
 " 余計なファイルを作らない
 set noundofile
+" 余計なファイルを無視
+set wildignore+=*/tmp/**,*.so,*.swp,*.zip,*.jpg,*.png
 " 検索ワードの最初の文字を入力した時点で検索を開始する
 set incsearch
 " 大文字、小文字を区別せずに検索する
