@@ -1,8 +1,8 @@
 let g:lightline = {
-      \ 'colorscheme': 'landscape',
-      \ 'mode_map': { 'c': 'NORMAL' },
+      \ 'colorscheme': 'wombat',
+      \ 'mode_map': {'c': 'NORMAL'},
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+      \   'left': [ [ 'mode','paste' ],[ 'fugitive','filename' ] ]
       \ },
       \ 'component_function': {
       \   'modified': 'LightLineModified',
@@ -12,10 +12,8 @@ let g:lightline = {
       \   'fileformat': 'LightLineFileformat',
       \   'filetype': 'LightLineFiletype',
       \   'fileencoding': 'LightLineFileencoding',
-      \   'mode': 'LightLineMode',
-      \ },
-      \ 'separator': { 'left': '⮀', 'right': '⮂' },
-      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+      \   'mode': 'LightLineMode'
+      \ }
       \ }
 
 function! LightLineModified()
@@ -23,7 +21,7 @@ function! LightLineModified()
 endfunction
 
 function! LightLineReadonly()
-  return &ft !~? 'help\|vimfiler\|gundo' && &readonly ? '⭤' : ''
+  return &ft !~? 'help\|vimfiler\|gundo' && &readonly ? 'x' : ''
 endfunction
 
 function! LightLineFilename()
@@ -36,10 +34,12 @@ function! LightLineFilename()
 endfunction
 
 function! LightLineFugitive()
-  if &ft !~? 'vimfiler\|gundo' && exists("*fugitive#head")
-    let _ = fugitive#head()
-    return strlen(_) ? '⭠ '._ : ''
-  endif
+  try
+    if &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head')
+      return fugitive#head()
+    endif
+  catch
+  endtry
   return ''
 endfunction
 
@@ -58,5 +58,3 @@ endfunction
 function! LightLineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
-" }}}
-
