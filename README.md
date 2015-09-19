@@ -4,7 +4,9 @@ dotfiles
 
 # Mac
 ## X-codeのインストール
+``` sh
 sudo xcodebuild -license
+```
 
 ## Homebrew, ansibleのインストール
 ```sh
@@ -15,7 +17,7 @@ brew install ansible
 
 ## パッケージのインストール(Homebrew)
 ```sh
-sh provisioning.sh
+sh mac-provisioning/provisioning.sh
 ```
 
 ## ドットファイルへのシンボリックリンク作成
