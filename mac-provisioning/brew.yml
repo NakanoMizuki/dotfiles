@@ -1,0 +1,80 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  vars:
+    homebrew_taps:
+      - phinze/cask
+
+    homebrew_packages:
+      - { name: ansible }
+      - { name: boost }
+      - { name: brew-cask }
+      - { name: cairo }
+      - { name: curl }
+      - { name: czmq }
+      - { name: elixir }
+      - { name: erlang }
+      - { name: fontconfig }
+      - { name: fontforge }
+      - { name: freetype }
+      - { name: gdbm }
+      - { name: gettext }
+      - { name: ghostscript }
+      - { name: glib }
+      - { name: gnu-sed }
+      - { name: gobject-introspection }
+      - { name: harfbuzz }
+      - { name: highlight }
+      - { name: hub }
+      - { name: icu4c }
+      - { name: jbig2dec }
+      - { name: jpeg }
+      - { name: libffi }
+      - { name: libpng }
+      - { name: libtiff }
+      - { name: libtool }
+      - { name: libyaml }
+      - { name: little-cms2 }
+      - { name: lua }
+      - { name: mysql }
+      - { name: openssl }
+      - { name: pango }
+      - { name: pcre }
+      - { name: pixman }
+      - { name: pkg-config }
+      - { name: readline }
+      - { name: ricty }
+      - { name: tig }
+      - { name: unixodbc }
+      - { name: vim }
+      - { name: wxmac }
+      - { name: xz }
+      - { name: zeromq }
+      - { name: zsh }
+
+    homebrew_cask_packages:
+      - google-chrome
+      - karabiner
+      - vagrant
+      - virtualbox
+
+
+  tasks:
+    - name: install taps of homebrew
+      homebrew_tap: tap="{{item}}" state=present
+      with_items: homebrew_taps
+
+    - name: update homebrew
+      homebrew: update_homebrew=yes
+
+    - name: install homebrew packages
+      homebrew: name="{{item.name}}" state="{{item.state|default('latest')}}" install_options="{{item.install_options|default()}}"
+      with_items: homebrew_packages
+
+    - name: update brew-cask
+      homebrew: name=brew-cask state=latest
+
+    - name: install homebrew-cask packages
+      homebrew_cask: name="{{item}}" state=present
+      with_items: homebrew_cask_packages

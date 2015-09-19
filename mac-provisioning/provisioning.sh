@@ -5,7 +5,7 @@ pushd `dirname $0`
 
 # set install directory
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-ansible-playbook -i hosts -vv initialized.yml
+ansible-playbook -i hosts -vv brew.yml
 
 
 popd
