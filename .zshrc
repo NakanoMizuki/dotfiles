@@ -72,3 +72,7 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+
+# alias
+alias g='git'
