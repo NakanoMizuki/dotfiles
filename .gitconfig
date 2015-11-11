@@ -21,7 +21,8 @@
   cmm = commit -m
   amend = commit --amend
   co = checkout
-  cb = checkout -b
+  cob = checkout -b
+  com = checkout master
   br = branch
   brd = branch -d
   mr = merge
