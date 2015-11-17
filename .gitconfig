@@ -31,3 +31,5 @@
   psm = push origin master
   pl = pull
   df = diff
+  rb = rebase
+  rbm = rebase master
