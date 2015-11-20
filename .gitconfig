@@ -33,3 +33,5 @@
   df = diff
   rb = rebase
   rbm = rebase master
+  rs = reset
+  rsh = reset --hard
