@@ -14,7 +14,12 @@
   ui = auto
 [alias]
   st = status
-  lp = log -p
+  lo = log
+  lop = log -p
+  lod = log --author=MizukiNakano --since=yesterday --format='- %s' --date=iso
+  today = log --author=MizukiNakano --since=yesterday --format='- %s' --date=iso
+  low = log --author=MizukiNakano --since=1.week --format='%ad - %s' --date=iso
+  week = log --author=MizukiNakano --since=1.week --format='%ad - %s' --date=iso
   ad = add
   adp = add -p
   cm = commit
