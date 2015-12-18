@@ -38,5 +38,7 @@
   df = diff
   rb = rebase
   rbm = rebase master
+  rbc = rebase --continue
+  rba = rebase --abort
   rs = reset
   rsh = reset --hard
