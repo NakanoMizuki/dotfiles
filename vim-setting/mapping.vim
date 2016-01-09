@@ -11,7 +11,7 @@ nnoremap <C-l> $
 nnoremap <CR> A<CR><ESC>
 
 " 日付の挿入
-nnoremap <F6> <ESC>i<C-R>=strftime("%Y-%m-%d (%a) %H:%M")<CR><CR>
+nnoremap <F6> <ESC>A<C-R>=strftime("%Y-%m-%d (%a) %H:%M")<CR><CR>
 
 cnoremap <C-p> <UP>
 cnoremap <C-n> <DOWN>
