@@ -24,6 +24,8 @@
   adp = add -p
   cm = commit
   cmm = commit -m
+  # その日の日付でコミットする
+  cmt = "!f () { git commit -m \"`date '+%m'`-`date '+%d'`\";}; f"
   amend = commit --amend
   co = checkout
   cob = checkout -b
