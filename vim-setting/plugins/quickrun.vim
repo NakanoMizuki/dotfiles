@@ -3,7 +3,7 @@ let g:quickrun_config['tex'] = {
   \   'command' : 'latexmk',
   \   'outputter' : 'error',
   \   'outputter/error/error' : 'quickfix',
-  \   'cmdopt': '-pdfdvi',
+  \   'cmdopt': '-pv',
   \   'exec': ['%c %o %s']
   \ }
 
