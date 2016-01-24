@@ -1,3 +1,8 @@
+" Leaderを設定
+let mapleader="\<SPACE>"
+
+nnoremap <Leader>w :w<CR>
+
 " 移動関連
 nnoremap j gj
 nnoremap k gk

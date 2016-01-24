@@ -6,3 +6,6 @@ let g:quickrun_config['tex'] = {
   \   'cmdopt': '-pdfdvi',
   \   'exec': ['%c %o %s']
   \ }
+
+" mapping
+nnoremap <Leader>r :QuickRun<CR>
