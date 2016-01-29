@@ -13,7 +13,7 @@ nmap <C-j> %
 nnoremap <C-l> $
 
 " 改行
-nnoremap <CR> A<CR><ESC>
+nnoremap <CR> O<ESC><Down>
 
 " 日付の挿入
 nnoremap <F6> <ESC>A<C-R>=strftime("%Y-%m-%d (%a) %H:%M")<CR>
