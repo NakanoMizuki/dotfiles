@@ -1,6 +1,7 @@
 " Leaderを設定
 let mapleader="\<SPACE>"
 
+" 保存
 nnoremap <Leader>w :w<CR>
 
 " 移動関連
@@ -8,9 +9,9 @@ nnoremap j gj
 nnoremap k gk
 nnoremap gj j
 nnoremap gk k
-nnoremap <C-h> ^
+nmap <C-h> ^
 nmap <C-j> %
-nnoremap <C-l> $
+nmap <C-l> $
 
 " 改行
 nnoremap <CR> O<ESC><Down>
