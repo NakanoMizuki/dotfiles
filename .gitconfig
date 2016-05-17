@@ -40,6 +40,8 @@
   df = diff
   rb = rebase
   rbm = rebase master
+  rbi = rebase -i
+  rbim = rebase -i master
   rbc = rebase --continue
   rba = rebase --abort
   rs = reset
