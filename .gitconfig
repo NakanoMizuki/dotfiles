@@ -36,6 +36,7 @@
   mrnf = merge --no-ff
   ps = push
   psm = push origin master
+  psom = push origin master
   pl = pull
   df = diff
   rb = rebase
@@ -46,3 +47,4 @@
   rba = rebase --abort
   rs = reset
   rsh = reset --hard
+  prune = fetch --prune
