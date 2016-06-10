@@ -27,6 +27,7 @@
   # その日の日付でコミットする
   cmt = "!f () { git commit -m \"`date '+%m'`-`date '+%d'`\";}; f"
   amend = commit --amend
+  am = commit --amend
   co = checkout
   cob = checkout -b
   com = checkout master
