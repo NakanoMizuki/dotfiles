@@ -35,6 +35,7 @@
   brd = branch -d
   mr = merge
   mrnf = merge --no-ff
+  mt = mergetool
   ps = push
   psm = push origin master
   psom = push origin master
