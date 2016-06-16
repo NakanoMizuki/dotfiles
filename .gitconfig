@@ -49,4 +49,5 @@
   rba = rebase --abort
   rs = reset
   rsh = reset --hard
+  fe = fetch
   prune = fetch --prune
