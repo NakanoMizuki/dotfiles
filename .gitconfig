@@ -39,6 +39,7 @@
   ps = push
   psm = push origin master
   psom = push origin master
+  psfo = push -f origin
   pl = pull
   df = diff
   rb = rebase
