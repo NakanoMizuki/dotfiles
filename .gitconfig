@@ -37,8 +37,9 @@
   mrnf = merge --no-ff
   mt = mergetool
   ps = push
-  psm = push origin master
+  pso = push origin
   psom = push origin master
+  psm = push origin master
   psfo = push -f origin
   pl = pull
   df = diff
