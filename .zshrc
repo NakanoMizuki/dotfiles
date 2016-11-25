@@ -49,6 +49,8 @@ SAVEHIST=1000000
 ## 同じコマンドをヒストリに残さない
 setopt hist_ignore_all_dups
 
+# rbenvの設定
+eval "$(rbenv init -)"
 
 # 補完
 ## 自動補完を有効にする
