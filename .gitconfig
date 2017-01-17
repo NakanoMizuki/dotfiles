@@ -43,6 +43,7 @@
   psfo = push -f origin
   pl = pull
   df = diff
+  dfw = diff --color-words
   rb = rebase
   rbm = rebase master
   rbi = rebase -i
