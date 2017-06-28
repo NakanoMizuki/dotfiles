@@ -51,6 +51,8 @@ set wildmenu
 set showcmd
 " ステータスラインを表示
 set laststatus=2
+" スクロール時の余白行数
+set scrolloff=5
 
 " 保存時に末尾の空白を削除
 autocmd BufWritePre * :%s/\s\+$//ge
