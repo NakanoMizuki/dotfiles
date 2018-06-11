@@ -47,7 +47,6 @@ NeoBundle 'tmhedberg/matchit'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'kakkyz81/evervim'
 
 " Elixir
 NeoBundle "elixir-lang/vim-elixir"
