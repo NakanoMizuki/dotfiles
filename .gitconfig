@@ -8,7 +8,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-  name = MizukiNakano
+  name = mi-nakano
   email = mizuki590@gmail.com
 [color]
   ui = auto
