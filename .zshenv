@@ -20,4 +20,3 @@ path=(
   $NODE_BREW/bin
   $path
 )
-eval "$(pyenv virtualenv-init -)"
