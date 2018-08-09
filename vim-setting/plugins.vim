@@ -54,6 +54,8 @@ NeoBundle "elixir-lang/vim-elixir"
 NeoBundle 'kchmck/vim-coffee-script'
 " JSON
 NeoBundle 'elzr/vim-json'
+" TypeScript
+NeoBundle 'leafgarland/typescript-vim'
 
 " プラグインでインストールされていないものがないかチェック
 NeoBundleCheck
