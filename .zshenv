@@ -15,5 +15,6 @@ path=(
   ~/bin
   $path
   $NODE_BREW/bin
+  $GOPATH/bin
   $path
 )
