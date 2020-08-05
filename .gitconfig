@@ -6,6 +6,10 @@
   email = mizuki590@gmail.com
 [color]
   ui = auto
+[merge]
+  ff = false
+[pull]
+  ff = only
 [alias]
   st = status
   lo = log
