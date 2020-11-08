@@ -95,3 +95,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 alias g='git'
 alias b='brew'
 alias bu='brew update ; brew upgrade ; brew cleanup'
+alias k='kubectl'
