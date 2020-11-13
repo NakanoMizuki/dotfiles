@@ -96,4 +96,5 @@ source <(kubectl completion zsh)
 alias g='git'
 alias b='brew'
 alias bu='brew update ; brew upgrade ; brew cleanup'
+alias d='docker'
 alias k='kubectl'
