@@ -87,9 +87,6 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/nakanomizuki/.gvm/bin/gvm-init.sh" ]] && source "/Users/nakanomizuki/.gvm/bin/gvm-init.sh"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 source <(kubectl completion zsh)
 
 # alias
