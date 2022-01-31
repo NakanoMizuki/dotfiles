@@ -29,7 +29,7 @@
   am = commit --amend
   co = checkout
   cob = checkout -b
-  com = checkout master
+  com = checkout main
   br = branch
   brd = branch -d
   mr = merge
@@ -37,18 +37,20 @@
   mt = mergetool
   ps = push
   pso = push origin
-  psom = push origin master
-  psm = push origin master
+  psom = push origin main
+  psm = push origin main
   psfo = push -f origin
   pl = pull
   df = diff
   dfw = diff --color-words
   rb = rebase
-  rbm = rebase master
+  rbm = rebase main
   rbi = rebase -i
-  rbim = rebase -i master
+  rbim = rebase -i main
   rbc = rebase --continue
   rba = rebase --abort
   rs = reset
   fe = fetch
   prune = fetch --prune
+[init]
+	defaultBranch = main
