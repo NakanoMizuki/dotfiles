@@ -55,11 +55,6 @@
 
     homebrew_cask_packages:
       - google-chrome
-      - karabiner
-      - mactex
-      - vagrant
-      - virtualbox
-
 
   tasks:
     - name: install taps of homebrew
